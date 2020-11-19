@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISL-PREDICTION</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+    <div class="rowh rounded  square border rounded pl-3 text-white font-size:bold col-12 text-center container-fluid justify-content-center align-items-centerd ">
+       
+        <h1 class="text">Indian Super League -2020<h1>
+            
+            <img class="image" src="https://img.theweek.in/content/dam/week/news/sports/images/2019/10/14/ISL-logo-pic.jpg" class="hello col-12 text-center rounded-circle float-right" alt="">
+               
+            <h1>SELECT YOUR TEAM  & WIN </h1>  
+            <h6>TERMS & CONDITIONS APPLY</h6>
+           
+       
+        </div>
+    </div>
+    </header>
+    <div class="row1 border-left-color: coral;  border-left-style: groove; col-12 font-size:bold text-center text-white ">
+       
+        <div class="formdiv">
+           
+        <form  action="" id="signup-form">
+          
+            
+          <label for="name">full name</label>
+          <input type="text" class="qwerty" name="name" id="fnam" placeholder="enter your name"> <br>
+          <br>
+          <label for="emai">Email id</label>
+          <input type="text" class="qwerty" name="email" id="emailid" placeholder="email address"> <br>
+          <br>
+          <label for="">Mobile number</label>
+          <input type="text" class="qwerty" name="number" id="phonenumber" placeholder="mobile number"> <br>
+          
+         <br>
+          <span class="label success">SELECT YOUR TEAM FROM ISL-2020</span> <br>
+          <br>
+
+            <select name="color" id="TEAMS">
+              <optgroup label="ISL 2020 WINNER">
+                <option value="ATK MOHUN BAGAN">ATK MOHUN BAGAN</option>
+                <option value="BENGALURU">BENGALURU</option>
+                <option value="GOA FC">GOA fc</option>
+                <option value="CHENNAYIN FC">CHENNAIYIN FC</option>
+                <option value="KERALA BLASTERS"> KERALA BLASTERS</option>
+                <option value="MUMBAI CITY">MUMBAI CITY</option>
+                <option value="ODISHA FC">ODISHA FC</option>
+                <option value="EAST BENGAL">EAST BENGAL</option> 
+                <option value="HYDERABAD">HYDERABAD</option>
+                <option value="JAMSHEDPUR FC">JAMSHEDPUR FC</option>
+                <option value="NORTH EAST UNITED">NORTH EAST UNITED</option>
+
+              </optgroup>
+
+            </select> <br>
+            <input id="sub" type="submit" value="Submit">
+           <div class="fill text-center  border-left-style: groov; border-left-color: coral;"></div>
+           
+
+          
+        </form>
+      
+        <div class="card col-12 col-xl-12 col-md-12 " id="contestDiv">
+            <div class="heading p-3 mb-2 bg-primary text-white" id="new">
+            <h1 class="crore"> *********1 CRORE LEAGUE*********</h1>  
+            </div>
+            <div class="card-body">
+              
+              <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_G331mXjfIlJOQT"> </script> </form>
+            </div>
+            
+          </div>
+        
+    </div>
+    
+    </div>
+    <br>
+    <br>
+    <div class="overflow-auto"><p>TERMS&CONDITIONS</p></div>
+    <br>
+    <br>
+    <br>
+     
+
+    
+    
+      <p class="text-danger col-12 col-xs-12 col-md-12">*********AFTER SUMBITTING YOU NEED TO PAY THE CONTESTANT AMOUNT YOU NEED else YOU WILL NOT BE IN THE CONTEST********</p></div>
+      <p class="contact text-white bg-secondary text-center"> For more queries :islpredict3@gmail.com</p>
+     
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.js"></script>
+   <script src="script.js"></script>
+         
+   <script>
+    $("#signup-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbyW5A1AmJ9t7VqTqOs1kF3mN1nnJG_leAHci1z0KA/exec",
+            data:$("#signup-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Form submitted you need to pay for joining LEAGUE")
+                window.location.reload()
+                //window.location.href="https://google.com"
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
+    })
+</script>
+</body>
+</html>

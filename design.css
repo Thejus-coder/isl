@@ -1,0 +1,97 @@
+.rowh{
+	background-color: #03032c;
+}
+.text-center {
+	text-align: center;
+  }
+  .text{
+	font-family: "Sofia";
+	font-size: 50px;
+  }
+  .hello{
+	  width: 0px;
+	  height: 70px;
+	  margin-left: 200px;
+	  margin-top: 18px;
+  }
+  .row1{
+	  height: 600px;
+	  background-image: linear-gradient(to right, rgb(110, 33, 146),blue,indigo,);
+	  border-radius: 25px;
+	  
+	
+	  
+  }
+.row2{
+	width: auto;
+}
+.label {
+	color: white;
+	padding: 8px;
+	
+	margin-top: 10px;
+	border-radius: 20px;
+	font-weight: bold;
+	width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: none;
+  animation-duration: 4s;
+  }
+  .formdiv{
+	  padding-top: 20px;
+  }
+ .new{
+	 padding-top: 20px;
+ }
+ .card-title{
+	color: green;
+	background-color: inherit;
+ }
+ .card{
+	
+	
+	 margin-top: 20px;
+	 border-radius: 80px;
+ }
+ .heading{
+	 margin:0;
+	 background-color: #bff00d;
+ }
+ .overflow-auto{
+	 background-color: white;
+	 color: #03032c;
+	 width: 300px;
+	 height: 200px;
+	 float: left;
+	 margin-left: 1100px;
+	 margin-top: -200px;
+ }
+ .image{
+	 width: 120px;
+	 height: 100px;
+	 border-radius: 50%;
+ }
+ .blck{
+	 margin-top: 20px;
+ }
+ .qwerty{
+	 border-radius: 20px;
+ }
+ #sub{
+	background-color: #4CAF50; /* Green */
+	
+	border-radius: 2px;
+	color: white;
+	font: bold;
+	text-align: center;
+ }
+ #TEAMS{
+	 border-radius: 2px;
+ }
+ .rules{
+	 
+	 background-color: black;
+	 color: whitesmoke;
+	 float: left;
+ }
